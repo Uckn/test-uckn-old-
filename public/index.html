@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <script src="https://cdn.firebase.com/js/client/2.3.2/firebase.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+<div class="panel-default">
+    <div class="panel-heading">
+        <p>TokyoChat</p>
+    </div>
+    <div id="scroller" class="panel-body">
+        <ul id='messages'>
+        </ul>
+    </div>
+    <div class="panel-footer">
+        <input type='text' class="form-control" id="nameInput" placeholder="ユーザー名を入力してください">
+    </div>
+    <div class="panel-footer">
+        <input type='text' class="form-control" id="messageInput" placeholder="メッセージ内容を入力してください">
+    </div>
+    <div class="panel-footer">
+      <input type="button" class="form-control" id="submitButton" value="送信">
+    </div>
+</div>
+
+<script src="https://www.gstatic.com/firebasejs/4.13.0/firebase.js"></script>
+<script>
+    // Initialize Firebase
+    var config = {
+        apiKey: "AIzaSyDHWJyK9knkj3Vo_QxWPFfw1tgg3mbHaFc",
+        authDomain: "test-uckn.firebaseapp.com",
+        databaseURL: "https://test-uckn.firebaseio.com",
+        projectId: "test-uckn",
+        storageBucket: "test-uckn.appspot.com",
+        messagingSenderId: "92193668732"
+    };
+    firebase.initializeApp(config);
+</script>
+<script type="text/javascript" src="main.js"></script>
+</body>
+
+</html>
